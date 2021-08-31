@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+menu,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  background-color: white;
+  color: #636363;
+  font-family: 'Proxima Nova Condensed', 'Proxima Nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+#root .layout__header {
+  height: 100px;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: white;
+  border-bottom: 1px solid #d6d6d6;
+  z-index: 100;
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+#root .layout__header header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  #root .layout__header header {
+    padding: 0 1.75rem;
+  }
+}
+
+#root .layout__header header .logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 32px;
+  text-decoration: none;
+}
+
+#root .layout__header header .logo h1 {
+  display: inline-block;
+  height: 32px;
+  margin: 0 0 0 12px;
+  color: #000;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  vertical-align: middle;
+}
+
+#root .layout__header header .logo img {
+  height: 60px;
+}
+
+#root .layout__main-wrapper {
+  margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  #root .layout__main-wrapper {
+    padding: 1.25rem 1.75rem;
+  }
+}
+
+#root .layout__main-wrapper .main {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#root .layout__main-wrapper .main .text-content h1,
+#root .layout__main-wrapper .main .text-content h2,
+#root .layout__main-wrapper .main .text-content h3,
+#root .layout__main-wrapper .main .text-content h4,
+#root .layout__main-wrapper .main .text-content h5 {
+  font-family: 'Proxima Nova Condensed', 'Proxima Nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  line-height: 1.22;
+  color: #404040;
+}
+
+#root .layout__main-wrapper .main .text-content h1:not(:last-child),
+#root .layout__main-wrapper .main .text-content h2:not(:last-child),
+#root .layout__main-wrapper .main .text-content h3:not(:last-child),
+#root .layout__main-wrapper .main .text-content h4:not(:last-child),
+#root .layout__main-wrapper .main .text-content h5:not(:last-child),
+#root .layout__main-wrapper .main .text-content h6:not(:last-child),
+#root .layout__main-wrapper .main .text-content p:not(:last-child),
+#root .layout__main-wrapper .main .text-content figure:not(:last-child),
+#root .layout__main-wrapper .main .text-content figcaption:not(:last-child),
+#root .layout__main-wrapper .main .text-content pre:not(:last-child),
+#root .layout__main-wrapper .main .text-content ul:not(:last-child),
+#root .layout__main-wrapper .main .text-content ol:not(:last-child),
+#root .layout__main-wrapper .main .text-content li:not(:last-child),
+#root .layout__main-wrapper .main .text-content blockquote:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+
+#root .layout__main-wrapper .main .text-content h1:not(:first-child),
+#root .layout__main-wrapper .main .text-content h2:not(:first-child),
+#root .layout__main-wrapper .main .text-content h3:not(:first-child),
+#root .layout__main-wrapper .main .text-content h4:not(:first-child),
+#root .layout__main-wrapper .main .text-content h5:not(:first-child),
+#root .layout__main-wrapper .main .text-content h6:not(:first-child),
+#root .layout__main-wrapper .main .text-content p:not(:first-child),
+#root .layout__main-wrapper .main .text-content figure:not(:first-child),
+#root .layout__main-wrapper .main .text-content figcaption:not(:first-child),
+#root .layout__main-wrapper .main .text-content pre:not(:first-child),
+#root .layout__main-wrapper .main .text-content ul:not(:first-child),
+#root .layout__main-wrapper .main .text-content ol:not(:first-child),
+#root .layout__main-wrapper .main .text-content li:not(:first-child),
+#root .layout__main-wrapper .main .text-content blockquote:not(:first-child) {
+  margin-top: 0.8rem;
+}
+
+#root .layout__main-wrapper .main .text-content h1 {
+  font-size: 38px;
+  color: #000910;
+}
+
+#root .layout__main-wrapper .main .text-content h2 {
+  font-size: 30px;
+}
+
+#root .layout__main-wrapper .main .text-content h3 {
+  font-size: 24px;
+}
+
+#root .layout__main-wrapper .main .text-content h4 {
+  font-size: 20px;
+}
+
+#root .layout__main-wrapper .main .text-content h5 {
+  font-size: 16px;
+}
+
+#root .layout__main-wrapper .main .text-content p {
+  line-height: 1.47;
+}
+
+#root .layout__main-wrapper .main .text-content li {
+  line-height: 1.47;
+}
+
+#root .layout__main-wrapper .main .text-content ul {
+  list-style: outside disc;
+}
+
+#root .layout__main-wrapper .main .text-content ul li {
+  margin-left: 1rem;
+}
+
+#root .layout__main-wrapper .main .text-content ul ul {
+  list-style-type: circle;
+}
+
+#root .layout__main-wrapper .main .text-content b,
+#root .layout__main-wrapper .main .text-content strong {
+  font-weight: 700;
+}
+
+#root .layout__main-wrapper .main .text-content a {
+  color: #fb6c6d;
+  text-decoration: underline;
+}
+
+#root .layout__main-wrapper .main .text-content blockquote {
+  border-left: 2px solid #d6d6d6;
+  padding-left: 1rem;
+}
+
+#root .layout__main-wrapper .main .text-content ol li {
+  margin-left: 1.4rem;
+}
+
+#root .layout__footer .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-top: 5rem;
+  border-top: 1px solid #000;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 0 3rem;
+}
+
+@media (max-width: 768px) {
+  #root .layout__footer .footer {
+    padding: 0 1.75rem;
+    border: none;
+    display: block;
+  }
+}
+
+#root .layout__footer .footer__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding-bottom: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .layout__footer .footer__list {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#root .layout__footer .footer__list li {
+  display: inline-block;
+  margin-left: 1rem;
+  vertical-align: middle;
+}
+
+#root .layout__footer .footer__list li first-child {
+  margin-left: 0;
+}
+
+#root .layout__footer .footer__list li a {
+  text-decoration: none;
+}
+
+#root .layout__footer .footer__aside {
+  padding: 0;
+  border: none;
+  font-size: 1rem;
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+      order: -1;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  #root .layout__footer .footer__aside {
+    border-top: 2px solid #7f7f7f;
+    padding-top: 1rem;
+  }
+}
+
+#root .layout__footer .footer__social {
+  margin-left: 2rem;
+}
+
+#root .layout__footer .footer__legal {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+#root .layout__footer .footer__link {
+  font-size: 1.25rem;
+  color: #000;
+  font-weight: 500;
+}
+
+#root .layout__footer .footer__icon {
+  width: 32px;
+  height: 32;
+}
+
+#root .layout__footer .footer .screenreader {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+/*# sourceMappingURL=styles.css.map */

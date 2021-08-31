@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+menu,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  color: rgb(99, 99, 99);
+  font-family: 'Proxima Nova Condensed', 'Proxima Nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+#root {
+  .layout {
+    &__header {
+      height: 100px;
+      position: sticky;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      background-color: rgb(255, 255, 255);
+      border-bottom: 1px solid rgb(214, 214, 214);
+      z-index: 100;
+      header {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        @media (max-width: 768px) {
+          padding: 0 1.75rem;
+        }
+        .logo {
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 32px;
+            text-decoration: none;
+          }
+          h1 {
+            display: inline-block;
+            height: 32px;
+            margin: 0 0 0 12px;
+            color: #000;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 32px;
+            vertical-align: middle;
+          }
+          img {
+            height: 60px;
+          }
+        }
+      }
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 0;
+      background-color: white;
+    }
+    &__main-wrapper {
+      margin: 1rem 0;
+      @media (max-width: 768px) {
+        padding: 1.25rem 1.75rem;
+      }
+      .main {
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .text-content {
+          h1,
+          h2,
+          h3,
+          h4,
+          h5 {
+            font-family: 'Proxima Nova Condensed', 'Proxima Nova', 'Helvetica Neue', Arial, Helvetica,
+              sans-serif;
+            font-weight: 800;
+            line-height: 1.22;
+            color: rgb(64, 64, 64);
+          }
+          h1:not(:last-child),
+          h2:not(:last-child),
+          h3:not(:last-child),
+          h4:not(:last-child),
+          h5:not(:last-child),
+          h6:not(:last-child),
+          p:not(:last-child),
+          figure:not(:last-child),
+          figcaption:not(:last-child),
+          pre:not(:last-child),
+          ul:not(:last-child),
+          ol:not(:last-child),
+          li:not(:last-child),
+          blockquote:not(:last-child) {
+            margin-bottom: 0.8rem;
+          }
+          h1:not(:first-child),
+          h2:not(:first-child),
+          h3:not(:first-child),
+          h4:not(:first-child),
+          h5:not(:first-child),
+          h6:not(:first-child),
+          p:not(:first-child),
+          figure:not(:first-child),
+          figcaption:not(:first-child),
+          pre:not(:first-child),
+          ul:not(:first-child),
+          ol:not(:first-child),
+          li:not(:first-child),
+          blockquote:not(:first-child) {
+            margin-top: 0.8rem;
+          }
+          h1 {
+            font-size: 38px;
+            color: rgb(0, 9, 16);
+          }
+          h2 {
+            font-size: 30px;
+          }
+          h3 {
+            font-size: 24px;
+          }
+          h4 {
+            font-size: 20px;
+          }
+          h5 {
+            font-size: 16px;
+          }
+          p {
+            line-height: 1.47;
+          }
+          li {
+            line-height: 1.47;
+          }
+          ul {
+            list-style: outside disc;
+            li {
+              margin-left: 1rem;
+            }
+            ul {
+              list-style-type: circle;
+            }
+          }
+          b,
+          strong {
+            font-weight: 700;
+          }
+          a {
+            color: #fb6c6d;
+            text-decoration: underline;
+          }
+          blockquote {
+            border-left: 2px solid rgb(214, 214, 214);
+            padding-left: 1rem;
+          }
+          ol {
+            li {
+              margin-left: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+    &__footer {
+      .footer {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        margin-top: 5rem;
+        border-top: 1px solid #000;
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1rem 0 3rem;
+        @media (max-width: 768px) {
+          padding: 0 1.75rem;
+          border: none;
+          display: block;
+        }
+        &__main {
+          display: flex;
+          -webkit-box-pack: justify;
+          justify-content: space-between;
+          font-size: 0.875rem;
+          font-weight: 500;
+          padding-bottom: 0;
+          align-items: center;
+        }
+        &__list {
+          display: inline-block;
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          li {
+            & first-child {
+              margin-left: 0;
+            }
+            display: inline-block;
+            margin-left: 1rem;
+            vertical-align: middle;
+            a {
+              text-decoration: none;
+            }
+          }
+        }
+        &__aside {
+          @media (max-width: 768px) {
+            border-top: 2px solid #7f7f7f;
+            padding-top: 1rem;
+          }
+          padding: 0;
+          border: none;
+          font-size: 1rem;
+          -webkit-box-ordinal-group: 0;
+          order: -1;
+          font-weight: 400;
+        }
+        &__social {
+          margin-left: 2rem;
+        }
+        &__legal {
+          display: inline-block;
+          margin-left: 2rem;
+        }
+        &__link {
+          font-size: 1.25rem;
+          color: #000;
+          font-weight: 500;
+        }
+        &__icon {
+          width: 32px;
+          height: 32;
+        }
+        .screenreader {
+          clip: rect(1px, 1px, 1px, 1px);
+          height: 1px;
+          overflow: hidden;
+          position: absolute;
+          white-space: nowrap;
+          width: 1px;
+        }
+      }
+    }
+  }
+}
