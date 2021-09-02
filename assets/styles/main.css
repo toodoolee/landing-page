@@ -16,7 +16,7 @@ html {
   width: 0.5rem;
   height: 0.5rem;
   border: 5em;
-  background-color: #1B1D2C;
+  background-color: #1b1d2c;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -26,7 +26,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #1B1D2C;
+  background-color: #1b1d2c;
   /* border-radius: 5em; */
 }
 
@@ -1269,11 +1269,16 @@ label {
 }
 
 .button-primary {
-  background: #4234f8;
+  background: rgba(29, 118, 129, 0.89);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .button-primary:hover {
-  background: #4b3ef8;
+  background: rgba(87, 124, 224, 0.432);
 }
 
 .button-primary.button-shadow::before {
