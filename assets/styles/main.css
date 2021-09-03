@@ -1892,6 +1892,105 @@ main {
   }
 }
 
+#reviews {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 12px !important;
+  color: #f8f8f8;
+}
+#review {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 12px !important;
+}
+.demo {
+  background: #0b0d19;
+}
+.testimonial {
+  margin: 0 25px 30px;
+}
+.checked {
+  color: orange;
+}
+.testimonial .testimonial-content {
+  padding: 33px;
+  margin: 0;
+  background: #fff;
+  border: 1px solid #0b0d19;
+  position: relative;
+}
+.testimonial .testimonial-content:after {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: #0b0d19;
+  position: absolute;
+  bottom: -5px;
+  left: 22px;
+  transform: rotate(45deg);
+}
+.testimonial-content .testimonial-icon {
+  width: 50px;
+  height: 45px;
+  background: #8b8bf3;
+  text-align: center;
+  font-size: 22px;
+  color: rgb(165, 90, 90);
+  line-height: 42px;
+  position: absolute;
+  top: 25px;
+  left: -20px;
+}
+.testimonial-content .testimonial-icon:before {
+  content: "";
+  border-bottom: 16px solid #8b8bf3;
+  border-left: 18px solid transparent;
+  position: absolute;
+  top: -16px;
+  left: 1px;
+}
+.testimonial-content {
+  background: rgba(11, 13, 25, 0.15) !important;
+  box-shadow: 0 8px 32px 0 rgba(24, 28, 78, 0.2) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+  border-radius: 35px !important;
+}
+.testimonial .description {
+  font-size: 15px;
+  font-style: italic;
+  color: #8b8bf3;
+  line-height: 20px;
+  margin: 1.55em;
+}
+.testimonial .title {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #525252 !important;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin: 0 0 5px 0;
+}
+.testimonial .post {
+  display: block;
+  font-size: 14px;
+  color: #8b8bf3;
+}
+.owl-theme .owl-controls {
+  margin-top: 2;
+}
+.owl-theme .owl-controls .owl-page span {
+  background: #ccc;
+  opacity: 1;
+  transition: all 0.4s ease 0s;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  background: #8b8bf3;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
